@@ -20,7 +20,7 @@
 2. Install dependencies: `npm install`.
 3. Set up the database using the SQL script provided in `/database/hospital_dump.sql`.
 4. Update database credentials in `/config/dbConfig.js`.
-5. Start the server: `npm start`.
+5. Start the server: `npm start/npm run dev`.
 
 ## Postman Collection
 - Import the provided Postman collection to test the APIs.
