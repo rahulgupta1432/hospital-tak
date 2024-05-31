@@ -1,0 +1,103 @@
+-- Populate Hospitals
+INSERT INTO hospitals (name) VALUES 
+('Apollo Hospitals'), 
+('Jawaharlal Nehru Medical College and Hospital'), 
+('Indira Gandhi Institute of Medical Sciences (IGIMS)'), 
+('AIIMS - All India Institute Of Medical Science');
+
+-- Populate Psychiatrists
+INSERT INTO psychiatrists (name, hospitalId) VALUES
+('Dr. Vikram Kapoor', 1),
+('Dr. Ananya Reddy', 1),
+('Dr. Aditya Singh', 1),
+('Dr. Neha Patel', 1),
+('Dr. Rajesh Kumar', 2),
+('Dr. Shreya Sharma', 2),
+('Dr. Varun Verma', 2),
+('Dr. Pooja Gupta', 2),
+('Dr. Arjun Iyer', 3),
+('Dr. Nisha Khanna', 3),
+('Dr. Rahul Gupta', 4),
+('Dr. Ritu Singh', 4),
+('Dr. Sanjay Kumar', 4),
+('Dr. Meera Sharma', 4);
+
+
+
+-- Populate Patients
+INSERT INTO patients (name, address, email, phoneNumber, password, patientPicture, hospitalId, psychiatristId) VALUES
+('Surya Reddy', '2323 Oak Lane, Bangalore', 'surya.reddy@example.com', '1234567822', 'password33', 'surya.jpg', 2, 1, NOW()),
+('Aditi Kapoor', '2121 Pine Road, Hyderabad', 'aditi.kapoor@example.com', '1234567823', 'password34', 'aditi.jpg', 3, 2, NOW()),
+('Rohan Iyer', '2323 Cedar Court, Chennai', 'rohan.iyer@example.com', '1234567824', 'password35', 'rohan.jpg', 4, 3, NOW()),
+('Neha Patel', '1313 Cedar Court, Chennai', 'neha.patel@example.com', '1234567825', 'password36', 'neha.jpg', 1, 4, NOW()),
+('Suresh Kumar', '1010 Pine Road, Hyderabad', 'suresh.kumar@example.com', '1234567826', 'password37', 'suresh.jpg', 2, 5, NOW()),
+('Pooja Singh', '1515 Birch Street, Mumbai', 'pooja.singh@example.com', '1234567827', 'password38', 'pooja.jpg', 3, 6, NOW()),
+('Vikas Sharma', '1717 Elm Avenue, Delhi', 'vikas.sharma@example.com', '1234567828', 'password39', 'vikas.jpg', 4, 7, NOW()),
+('Kritika Reddy', '1919 Oak Lane, Bangalore', 'kritika.reddy@example.com', '1234567829', 'password40', 'kritika.jpg', 1, 8, NOW()),
+('Rohan Kapoor', '2121 Pine Road, Hyderabad', 'rohan.kapoor@example.com', '1234567830', 'password41', 'rohan.jpg', 2, 9, NOW()),
+('Rajesh Iyer', '2323 Cedar Court, Chennai', 'rajesh.iyer@example.com', '1234567831', 'password42', 'rajesh.jpg', 3, 10, NOW()),
+('Mona Patel', '1313 Cedar Court, Chennai', 'mona.patel@example.com', '1234567832', 'password43', 'mona.jpg', 4, 11, NOW()),
+('Varun Kumar', '1010 Pine Road, Hyderabad', 'varun.kumar@example.com', '1234567833', 'password44', 'varun.jpg', 1, 12, NOW()),
+('Swati Singh', '1515 Birch Street, Mumbai', 'swati.singh@example.com', '1234567834', 'password45', 'swati.jpg', 2, 13, NOW()),
+('Avinash Sharma', '1717 Elm Avenue, Delhi', 'avinash.sharma@example.com', '1234567835', 'password46', 'avinash.jpg', 3, 14, NOW()),
+('Nisha Reddy', '1919 Oak Lane, Bangalore', 'nisha.reddy@example.com', '1234567836', 'password47', 'nisha.jpg', 4, 1, NOW()),
+('Piyush Kapoor', '2121 Pine Road, Hyderabad', 'piyush.kapoor@example.com', '1234567837', 'password48', 'piyush.jpg', 1, 2, NOW()),
+('Sanjana Iyer', '2323 Cedar Court, Chennai', 'sanjana.iyer@example.com', '1234567838', 'password49', 'sanjana.jpg', 2, 3, NOW()),
+('Aditya Patel', '1313 Cedar Court, Chennai', 'aditya.patel@example.com', '1234567839', 'password50', 'aditya.jpg', 3, 4, NOW()),
+('Meera Kumar', '1010 Pine Road, Hyderabad', 'meera.kumar@example.com', '1234567840', 'password51', 'meera.jpg', 4, 5, NOW()),
+('Rahul Singh', '1515 Birch Street, Mumbai', 'rahul.singh@example.com', '1234567841', 'password52', 'rahul.jpg', 1, 6, NOW()),
+('Kavita Sharma', '1717 Elm Avenue, Delhi', 'kavita.sharma@example.com', '1234567842', 'password53', 'kavita.jpg', 2, 7, NOW()),
+('Vivek Reddy', '1919 Oak Lane, Bangalore', 'vivek.reddy@example.com', '1234567843', 'password54', 'vivek.jpg', 3, 8, NOW()),
+('Aryan Iyer', '2121 Pine Road, Hyderabad', 'aryan.iyer@example.com', '1234567844', 'password55', 'aryan.jpg', 4, 9, NOW()),
+('Anjali Patel', '2323 Cedar Court, Chennai', 'anjali.patel@example.com', '1234567845', 'password56', 'anjali.jpg', 1, 10, NOW()),
+('Rahul Kumar', '123 Main Street, Mumbai', 'rahul.kumar@example.com', '1234567846', 'password57', 'rahul.jpg', 2, 11, NOW()),
+('Priya Sharma', '456 Park Avenue, Delhi', 'priya.sharma@example.com', '1234567847', 'password58', 'priya.jpg', 3, 12, NOW()),
+('Amit Singh', '789 Elm Street, Bangalore', 'amit.singh@example.com', '1234567848', 'password59', 'amit.jpg', 4, 13, NOW()),
+('Neha Gupta', '1010 Pine Road, Hyderabad', 'neha.gupta@example.com', '1234567849', 'password60', 'neha.jpg', 1, 14, NOW());
+
+-- second layer of data
+('Sagarika Reddy', '2323 Maple Lane, Bangalore', 'sagarika.reddy@example.com', '1234567850', 'password61', 'sagarika.jpg', 2, 1, NOW()),
+('Arjun Kapoor', '2121 Cedar Road, Hyderabad', 'arjun.kapoor@example.com', '1234567851', 'password62', 'arjun.jpg', 3, 2, NOW()),
+('Ishaan Iyer', '2323 Pine Court, Chennai', 'ishaan.iyer@example.com', '1234567852', 'password63', 'ishaan.jpg', 4, 3, NOW()),
+('Nisha Sharma', '1313 Elm Street, Chennai', 'nisha.sharma@example.com', '1234567853', 'password64', 'nisha.jpg', 1, 4, NOW()),
+('Sahil Kumar', '1010 Cedar Avenue, Hyderabad', 'sahil.kumar@example.com', '1234567854', 'password65', 'sahil.jpg', 2, 5, NOW()),
+('Divya Singh', '1515 Oak Road, Mumbai', 'divya.singh@example.com', '1234567855', 'password66', 'divya.jpg', 3, 6, NOW()),
+('Amitabh Sharma', '1717 Birch Lane, Delhi', 'amitabh.sharma@example.com', '1234567856', 'password67', 'amitabh.jpg', 4, 7, NOW()),
+('Sneha Reddy', '1919 Maple Street, Bangalore', 'sneha.reddy@example.com', '1234567857', 'password68', 'sneha.jpg', 1, 8, NOW()),
+('Rohit Kapoor', '2121 Cedar Road, Hyderabad', 'rohit.kapoor@example.com', '1234567858', 'password69', 'rohit.jpg', 2, 9, NOW()),
+('Priyanka Iyer', '2323 Pine Court, Chennai', 'priyanka.iyer@example.com', '1234567859', 'password70', 'priyanka.jpg', 3, 10, NOW()),
+('Raj Patel', '1313 Elm Street, Chennai', 'raj.patel@example.com', '1234567860', 'password71', 'raj.jpg', 4, 11, NOW()),
+('Kavya Kumar', '1010 Cedar Avenue, Hyderabad', 'kavya.kumar@example.com', '1234567861', 'password72', 'kavya.jpg', 1, 12, NOW()),
+('Akash Singh', '1515 Oak Road, Mumbai', 'akash.singh@example.com', '1234567862', 'password73', 'akash.jpg', 2, 13, NOW()),
+('Anita Sharma', '1717 Birch Lane, Delhi', 'anita.sharma@example.com', '1234567863', 'password74', 'anita.jpg', 3, 14, NOW()),
+('Siddharth Reddy', '1919 Maple Street, Bangalore', 'siddharth.reddy@example.com', '1234567864', 'password75', 'siddharth.jpg', 4, 1, NOW()),
+('Riya Kapoor', '2121 Cedar Road, Hyderabad', 'riya.kapoor@example.com', '1234567865', 'password76', 'riya.jpg', 1, 2, NOW()),
+('Vishal Iyer', '2323 Pine Court, Chennai', 'vishal.iyer@example.com', '1234567866', 'password77', 'vishal.jpg', 2, 3, NOW()),
+('Shreya Patel', '1313 Elm Street, Chennai', 'shreya.patel@example.com', '1234567867', 'password78', 'shreya.jpg', 3, 4, NOW()),
+('Rajesh Kumar', '1010 Cedar Avenue, Hyderabad', 'rajesh.kumar@example.com', '1234567868', 'password79', 'rajesh.jpg', 4, 5, NOW()),
+('Ananya Singh', '1515 Oak Road, Mumbai', 'ananya.singh@example.com', '1234567869', 'password80', 'ananya.jpg', 1, 6, NOW()),
+('Alok Sharma', '1717 Birch Lane, Delhi', 'alok.sharma@example.com', '1234567870', 'password81', 'alok.jpg', 2, 7, NOW()),
+('Vikram Reddy', '1919 Maple Street, Bangalore', 'vikram.reddy@example.com', '1234567871', 'password82', 'vikram.jpg', 3, 8, NOW()),
+('Shivani Iyer', '2121 Cedar Road, Hyderabad', 'shivani.iyer@example.com', '1234567872', 'password83', 'shivani.jpg', 4, 9, NOW()),
+('Amit Patel', '2323 Pine Court, Chennai', 'amit.patel@example.com', '1234567873', 'password84', 'amit.jpg', 1, 10, NOW());
+
+-- third layer of data
+('Shreya Reddy', '2323 Maple Lane, Bangalore', 'shreya.reddy@example.com', '1234567874', 'password85', 'shreya.jpg', 2, 1, NOW()),
+('Akshay Kapoor', '2121 Cedar Road, Hyderabad', 'akshay.kapoor@example.com', '1234567875', 'password86', 'akshay.jpg', 3, 2, NOW()),
+('Isha Iyer', '2323 Pine Court, Chennai', 'isha.iyer@example.com', '1234567876', 'password87', 'isha.jpg', 4, 3, NOW()),
+('Nidhi Sharma', '1313 Elm Street, Chennai', 'nidhi.sharma@example.com', '1234567877', 'password88', 'nidhi.jpg', 1, 4, NOW()),
+('Sahil Kumar', '1010 Cedar Avenue, Hyderabad', 'sahil.kumar@example.com', '1234567878', 'password89', 'sahil.jpg', 2, 5, NOW()),
+('Divya Singh', '1515 Oak Road, Mumbai', 'divya.singh@example.com', '1234567879', 'password90', 'divya.jpg', 3, 6, NOW()),
+('Amitabh Sharma', '1717 Birch Lane, Delhi', 'amitabh.sharma@example.com', '1234567880', 'password91', 'amitabh.jpg', 4, 7, NOW()),
+('Sneha Reddy', '1919 Maple Street, Bangalore', 'sneha.reddy@example.com', '1234567881', 'password92', 'sneha.jpg', 1, 8, NOW()),
+('Rohit Kapoor', '2121 Cedar Road, Hyderabad', 'rohit.kapoor@example.com', '1234567882', 'password93', 'rohit.jpg', 2, 9, NOW()),
+('Priyanka Iyer', '2323 Pine Court, Chennai', 'priyanka.iyer@example.com', '1234567883', 'password94', 'priyanka.jpg', 3, 10, NOW()),
+('Raj Patel', '1313 Elm Street, Chennai', 'raj.patel@example.com', '1234567884', 'password95', 'raj.jpg', 4, 11, NOW()),
+('Kavya Kumar', '1010 Cedar Avenue, Hyderabad', 'kavya.kumar@example.com', '1234567885', 'password96', 'kavya.jpg', 1, 12, NOW()),
+('Akash Singh', '1515 Oak Road, Mumbai', 'akash.singh@example.com', '1234567886', 'password97', 'akash.jpg', 2, 13, NOW()),
+('Anita Sharma', '1717 Birch Lane, Delhi', 'anita.sharma@example.com', '1234567887', 'password98', 'anita.jpg', 3, 14, NOW()),
+('Siddharth Reddy', '1919 Maple Street, Bangalore', 'siddharth.reddy@example.com', '1234567888', 'password99', 'siddharth.jpg', 4, 1, NOW()),
+('Riya Kapoor', '2121 Cedar Road, Hyderabad', 'riya.kapoor@example.com', '1234567889', 'password100', 'riya.jpg', 1, 2, NOW()),
+('Vishal Iyer', '2323 Pine Court, Chennai', 'vishal.iyer@example.com', '1234567890', 'password101', 'vishal.jpg', 2, 3, NOW()),
+('Shreya Patel', '1313 Elm Street, Chennai', 'shreya.patel@example.com', '1234567891', 'password102', 'shreya.jpg', 3, 4, NOW()),
+('Rajesh Kumar', '1010 Cedar Avenue, Hyderabad', 'rajesh.kumar@example.com', '1234567892', 'password103', 'rajesh.jpg', 4, 5, NOW());

@@ -1,0 +1,72 @@
+{
+    "info": {
+        "name": "NodeJS-Mysql Selection Test",
+        "_postman_id": "abcdefg-1234-5678-9101-abcdefghij",
+        "description": "Postman collection for NodeJS-Mysql Selection Test",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Patient",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"John Doe\",\n    \"address\": \"1234 Elm Street, Apt 56\",\n    \"email\": \"john.doe@example.com\",\n    \"phoneNumber\": \"+12345678901\",\n    \"password\": \"Password123\",\n    \"patientPicture\": \"http://example.com/patientPicture.jpg\",\n    \"hospitalId\": 1,\n    \"psychiatristId\": 1\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/patient/create-patient",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "patient",
+                        "create-patient"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Hospital Details",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"hospitalId\": 1\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/v1/hospital/hospital-details",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "v1",
+                        "hospital",
+                        "hospital-details"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
